@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head prefix="dc: http://purl.org/dc/terms/ og: http://ogp.me/ns#"> <!-- namespaces used in metadata.html -->
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+  <title>About this site</title>
+  <meta name="author" content="Carl Boettiger" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- HTML5 metadata -->
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!-- RDFa Metadata (in DublinCore) -->
+<meta property="dc:title" content="About this site" />
+<meta property="dc:creator" content="Carl Boettiger" />
+<meta property="dc:date" content="" />
+<meta property="dc:format" content="text/html" />
+<meta property="dc:language" content="en" />
+<meta property="dc:identifier" content="/README.html" />
+<meta property="dc:rights" content="CC0" />
+<meta property="dc:source" content="Lab Notebook" />
+<meta property="dc:subject" content="Ecology" /> 
+<meta property="dc:type" content="website" /> 
+<!-- RDFa Metadata (in OpenGraph) -->
+<meta property="og:title" content="About this site" />
+<meta property="og:author" content="http://www.carlboettiger.info/index.html#me" />  <!-- Should be Liquid? URI? -->
+<meta property="http://ogp.me/ns/profile#first_name" content="Carl"/>
+<meta property="http://ogp.me/ns/profile#last_name" content="Boettiger"/>
+<meta property="http://ogp.me/ns/article#published_time" content="" />
+<meta property="og:site_name" content="Lab Notebook" /> <!-- Same as dc:source? -->
+<meta property="og:url" content="http://www.carlboettiger.info/README.html" />
+<meta property="og:type" content="website" /> 
+<!-- Google Scholar Metadata -->
+<!--
+<meta name="citation_author" content="Carl Boettiger"/>
+<meta name="citation_date" content=""/>
+<meta name="citation_title" content="About this site"/>
+<meta name="citation_journal_title" content="Lab Notebook"/>
+-->
+<!--NOTE: see also the COinS Metadata in span element in footer -->
+
+
+
+
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Help the browser identify the RSS feed automatically -->
+  <link rel="alternate" type="application/rss+xml" title="Carl Boettiger's Lab Notebook" href="/blog.xml" />
+</head>
+
+
+  <body prefix="dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/"> 
+    <!-- Navbar  ================================================== -->
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/README.html"><i class="icon-info-sign"></i></a>
+    </div>
+
+ <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+          <li  >
+          <a href="/index.html">Home</a></li>
+          <li  >
+          <a href="/vita.html">Vita</a></li>
+          <li  >
+          <a href="/research.html">Research</a></li>
+          <li  >
+          <a href="/teaching.html">Teaching</a></li>
+          <li  >
+          <a href="/community.html">Community</a></li>
+          <li  >
+          <a href="/lab-notebook.html">Lab Notebook</a></li>
+
+        </ul>
+
+      <!-- Search site using Google's index -->
+        <form class="navbar-form navbar-right" role="search" method="get" action="http://google.com/search">
+          <div class="form-group">
+            <input type="hidden" name="q" value="site:carlboettiger.info" />
+            <input type="text" class="form-control search-query" name="q" placeholder="Search"/>
+          </div>
+          <button class="btn btn-mini" type="submit"><i class="icon-search"></i></button> 
+       </form>
+
+    </div><!--/.nav-collapse -->
+  </div> <!-- /container -->
+</nav>
+
+
+
+    <div class="container"> <!-- Responsive grid layout, doesn't jump to full-width --> 
+      <header>
+        <h1 class="entry-title">About this site</h1>
+        <h2></h2>
+      </header>
+
+      <div class="row">
+  <div class="col-md-8 col-md-offset-1">
+    <article>
+    <p><a href="https://travis-ci.org/cboettig/labnotebook"><img src="https://travis-ci.org/cboettig/labnotebook.svg?branch=master" alt="Build Status" /></a></p>
+<p>Welcome to my online open lab notebook; home to all my research scribbles. This README documents the technical information about this site. If you’re looking for more about what this open lab notebook is about and why I keep it, consider starting with this <a href="http://www.carlboettiger.info/2012/09/28/Welcome-to-my-lab-notebook.html">introduction</a>, or <a href="http://www.carlboettiger.info">more about me</a>. <em>Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the University of California.</em></p>
+<ul>
+<li>Site source at <a href="http://github.com/cboettig/labnotebook">cboettig/labnotebook</a>.</li>
+<li>Please report <a href="https://github.com/cboettig/labnotebook/issues">errors or give feedback</a>.</li>
+</ul>
+<h1 id="site-features-credits">Site Features &amp; Credits</h1>
+<ul>
+<li>Colors and syntax highlighting with <a href="http://ethanschoonover.com/solarized">Solarized</a></li>
+<li>Crisp equations rendered in <a href="http://www.mathjax.org/">Mathjax</a></li>
+<li>Reproducible code execution with <a href="http://yihui.name/knitr/">knitr</a></li>
+<li>CSS based on <a href="http://getboostrap.com">twitter bootstrap</a></li>
+<li>Scalable CSS icons from <a href="http://fortawesome.github.com/Font-Awesome">FontAwesome</a></li>
+<li>Static site generation with <a href="https://github.com/mojombo/jekyll">Jekyll</a></li>
+<li>Markdown parsing with <a href="http://johnmacfarlane.net/pandoc/">pandoc</a></li>
+<li>Site and source code hosting on <a href="https://github.com/">Github</a></li>
+<li>Uptime monitoring from my.pingdom.com; see <a href="http://stats.pingdom.com/fy1sae94ydyi/616612">status report</a></li>
+</ul>
+<h1 id="notebook-archiving-data-management">Notebook Archiving &amp; Data Management</h1>
+<p>The lab notebook is written and maintained in plain text (UTF-8) using markdown. All files are kept in a version managed repository system using <a href="http://git-scm.com/">git</a>, which provides unique SHA hashes to protect against corruption. Synchronized backups of the git repository are maintained on both local and remote servers (RAID 6) to protect against hardware failures, as well as on the public international software repository, GitHub <a href="https://github.com/cboettig">github.com/cboettig</a>. Version history preserves a time-line of changes and protects against user error file loss. Archival copies of notebook entries shall be published annually to <a href="http://figshare.com">figshare</a> where they will be assigned DOIs and preserved by the <a href="http://www.clockss.org/clockss/Home">CLOCKSS</a> geopolitically distributed 12 node global archive.</p>
+<hr />
+<h1 id="building-from-source">Building from source</h1>
+<p><em>NOTE:</em> This site is developed for my own needs and may be difficult to adapt directly to another purpose. If you are new to Jekyll, consider starting with a basic Jekyll template such as <a href="http://jekyllbootstrap.com/">jekyll-bootstrap</a> which will be considerably easier to adapt than working from this repository directly.</p>
+<p>The site’s <a href="https://github.com/cboettig/labnotebook/tree/master/.travis.yml">.travis.yml</a> file contains the recipe to build this site from scratch on Travis-CI, which is how the site is currently deployed. As such, the script will always provide the current steps necessary to get the site to build (Travis-CI is based on a Ubuntu 12.04 image; these directions can be adapted as needed).</p>
+<p>This site repository also now includes a <a href="https://github.com/cboettig/labnotebook/tree/master/Dockerfile">Dockerfile</a> for generating a portable docker container to generate the site.</p>
+<p>A separate <a href="https://github.com/cboettig/labnotebook/tree/master/assets/_bootstrap-3.1.1/Dockerfile">Dockerfile for building boostrap 3.1.1 CSS</a> can be found in the <code>assets/_bootstrap-3.1.1</code> directory.</p>
+<h2 id="site-configuration">Site configuration</h2>
+<p>Fill in all elements of <code>_config.yml</code> appropriately.</p>
+<h2 id="api-key-configuration">API key configuration</h2>
+<p>Several of my custom plugins require authentication credentials to the relevant API, which are not included when forking this public repository, for obvious reasons. These credentials should be stored as secure YAML files in the project source directory, and added to both <code>.gitignore</code> and the <code>exclude</code> list of <code>_config.yml</code>. Currently credentials are only used for the Twitter and Google Analytics plugins. See the headers of these plugins for more documentation.</p>
+<h3 id="custom-plugins">Custom Plugins</h3>
+<p>I have written a series of <a href="https://github.com/cboettig/labnotebook/tree/master/_plugins/jekyll-labnotebook-plugins">custom Jekyll plugins</a> using these gems. See the header comments of each plugin for more details on their configuration and use. Most are written explicitly for my notebook and may require tweaking for general use. Plugins are frequently under development.</p>
+<hr />
+<h2 id="copyrights-license">Copyrights &amp; License</h2>
+<p>All original content is placed in the public domain by Carl Boettiger to the extent possible under law by the Creative Commons Zero declaration, <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>. Plugins are also provided under the <a href="http://opensource.org/licenses/MIT">MIT</a> license. Please remember that attribution and citation are appreciated where appropriate as proper scholarly practice. (Newton, Darwin, and Shakespeare are similarly in the public domain, but you wouldn’t plagiarize from them). Please cite or attribute this work as: <br/></p>
+<div vocab="http://purl.org/dc/terms/" typeof="bibliographicCitation">
+<span property="creator">Carl Boettiger</span> (<span property="date">“Page publication date”</span>), <span property="title">“Page Title”</span>, <span property="source">Lab Notebook</span>, <a property="http://creativecommons.org/ns#attributionURL" href="http://carlboettiger.info">http://carlboettiger.info</a>
+</div>
+<p><br/> with appropriate page title and publication date as indicated. <a href="http://greycite.knowledgeblog.org/">Greycite</a> is an excellent online tool that can generate the citation information for any particular page given it’s URL.</p>
+
+    </article>
+  </div>
+</div>
+
+
+
+      <footer class="footer">
+
+<!--************** FOAF information to social networks ***************************** -->
+  <div class="row">
+    <div class="col-md-3 col-xs-4 socialicons" style="font-size:20px" typeof="foaf:Person" about="http://www.carlboettiger.info#me">
+      <p>
+          <script type="text/javascript" src="/assets/js/obfuscate-email-link.js"></script> 
+
+          <a rel="foaf:account" href="https://twitter.com/cboettig" 
+             onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); 
+             return false;"><span class="showtooltip" title="follow me on twitter (reading, discussing)"><i class="fa fa-twitter"></i></span></a> 
+
+          <a rel="foaf:account" href="https://github.com/cboettig" 
+             onclick="recordOutboundLink(this, 'Outbound Links', 'Github'); 
+             return false;"><span class="showtooltip" title="follow me on Github (code, research)"><i class="fa fa-github"></i></span></a>
+      <!--
+          <a rel="foaf:account" href="https://plus.google.com/" 
+             onclick="recordOutboundLink(this, 'Outbound Links', 'GPlus'); 
+             return false;"><i class="fa fa-google-plus"></i></a>
+
+          <a rel="foaf:account" href="http://www.mendeley.com/profiles/carl-boettiger" 
+             onclick="recordOutboundLink(this, 'Outbound Links', 'Mendeley'); 
+             return false;"><img src="/assets/img/icon-mendeley.png" /></a> 
+
+           citations on google-scholar
+
+           stackoverflow
+      -->
+      <a rel="foaf:weblog" type="application/atom+xml" href="/blog.xml"  
+         class="showtooltip" title="RSS feeds for my blog-style entries. See the feed on my lab notebook (/atom.xml) to follow all entries instead." 
+         onclick="recordOutboundLink(this, 'Outbound Links', 'RSS'); 
+         return false;"><i class="fa fa-rss"></i></a>
+       </p>
+    </div>
+
+    
+    <!--**************** End social links **************************** -->
+
+
+    <div class="col-md-4 col-md-offset-1 col-xs-4">
+      <p><a onclick="recordOutboundLink(this, 'Outbound Links', 'ONS_claim'); return false;" href="http://onsclaims.wikispaces.com/"><img src="/assets/img/ons-aci2-icon.svg" alt="ONS" class="showtooltip" title="An Open Notebook Science (ONS) project claim: Entry provides all content (AC) immediately (I) or without significant delay.  See link for details"/></a></p>
+    </div>
+
+
+    <div class="col-md-3 col-md-offset-1 col-xs-4">
+      <p>
+      <a rel="license" property="http://creativecommons.org/ns#license" href="http://creativecommons.org/publicdomain/zero/1.0/" onclick="recordOutboundLink(this, 'Outbound Links', 'CC0'); return false;"><img src="/assets/img/cc-zero.svg" alt="CC0"/></a> 
+      </p>
+    </div>
+  </div>
+
+
+  
+<!-- COinS metadata (for citation managers like Zotero etc), goes in body text -->
+  <span
+      class="Z3988" 
+      title="ctx_ver=Z39.88-2004
+      &amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc
+      &amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator
+      &amp;rft.title=About this site
+      &amp;rft.creator=Carl Boettiger
+      &amp;rft.date=
+      &amp;rft.language=EN
+      &amp;rft.rights=CC0
+      &amp;rft_id=http://www.carlboettiger.info/README.html">
+  </span>
+
+
+</footer>
+
+
+
+
+          <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- JQuery, used on a few pages (still?) -->
+    <!-- <script type="text/javascript" src="/assets/js/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Equations using MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });       </script>
+    <!-- Twitter Bootstrap Javascript -->
+    <!--  <script src="/assets/js/bootstrap.min.js"></script> -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+    
+
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-18401403-1']);
+          _gaq.push(['_trackPageview']);
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+  </script>
+
+
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-18401403-1");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+
+
+
+
+    </div>
+  </body>
+</html>
+   

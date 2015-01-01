@@ -1,0 +1,14 @@
+ 
+http://carlboettiger.info/404.html  
+http://carlboettiger.info/README.html  
+http://carlboettiger.info/calendar.html  
+http://carlboettiger.info/community.html  
+http://carlboettiger.info/index.html  
+http://carlboettiger.info/lab-notebook.html  
+http://carlboettiger.info/networks.html  
+http://carlboettiger.info/research.html  
+http://carlboettiger.info/sitemap.txt  
+http://carlboettiger.info/teaching.html  
+http://carlboettiger.info/vita.html 
+
+
