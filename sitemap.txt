@@ -1,7 +1,12 @@
  
 http://carlboettiger.info/404.html  
+http://carlboettiger.info/R.xml  
 http://carlboettiger.info/README.html  
+http://carlboettiger.info/archive.html  
+http://carlboettiger.info/atom.xml  
+http://carlboettiger.info/blog.xml  
 http://carlboettiger.info/calendar.html  
+http://carlboettiger.info/categories.html  
 http://carlboettiger.info/community.html  
 http://carlboettiger.info/index.html  
 http://carlboettiger.info/lab-notebook.html  
