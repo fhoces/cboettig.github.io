@@ -13,6 +13,7 @@ http://carlboettiger.info/lab-notebook.html
 http://carlboettiger.info/networks.html  
 http://carlboettiger.info/research.html  
 http://carlboettiger.info/sitemap.txt  
+http://carlboettiger.info/tags.html  
 http://carlboettiger.info/teaching.html  
 http://carlboettiger.info/vita.html 
 
