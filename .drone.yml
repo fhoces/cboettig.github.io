@@ -4,10 +4,12 @@ script:
   - ls
   - pwd
   - git clone -b source https://github.com/cboettig/cboettig.github.io ../source
-  - cd ../source && Rscript -e 'servr::jekyll(serve=FALSE)' && cp -a _site ../cboettig.github.io
+  - cd ../source && Rscript -e 'servr::jekyll(serve=FALSE)'
+ 
 
 
 deploy:
   bash:
-    command: ls
+    command: ./deploy.sh
+     
 
