@@ -1,6 +1,9 @@
-image: rocker/hadleyverse
-	path: github.com/cboettig/cboettig.github.io
-	branch: source
+image: cboettig/labnotebook
+
+git:
+  path: github.com/cboettig/cboettig.github.io
+  branch: source
 
 script:
-	- R --version 
+  - ls
+
