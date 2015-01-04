@@ -1,10 +1,10 @@
 #!/bin/bash
-if [ ! -d _gh-pages ]; then
-	git clone -b master git@github.com:cboettig/cboettig.github.io _gh-pages
-# Control will enter here if $DIRECTORY exists.
-else
-	cd _gh-pages && git pull origin master && cd ..
-fi
-rsync -a _site/ _gh-pages/
-cd _gh-pages && git add -A . && git commit -m 'Site updated' && git push
+set -e
+git config user.name cboettig
+git config user.email cboettig@server.com
 
+if [ ! -d _posts  ]; then
+	git checkout gh-pages 
+fi
+rsync -a _site/ . 
+rm -rf _site && git add -A . && git commit -m 'Site updated' && git push

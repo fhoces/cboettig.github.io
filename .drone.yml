@@ -1,0 +1,10 @@
+image: cboettig/labnotebook
+script:
+	- git checkout -b source origin/source
+	- Rscript -e "servr::jekyll(serve=FALSE)"
+
+deploy:
+	bash:
+		script:
+			- ./deploy.sh  
+
