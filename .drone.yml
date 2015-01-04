@@ -1,9 +1,9 @@
 image: cboettig/labnotebook
 
 script:
-  - git checkout origin/source
-  - Rscript -e 'servr::jeykll()'
   - ls
+  - pwd
+  - git branch
 
 #deploy:
 #  bash:
