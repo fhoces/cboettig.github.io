@@ -3,8 +3,9 @@ image: cboettig/labnotebook
 script:
   - ls
   - pwd
-  - git clone -b source https://github.com/cboettig/cboettig.github.io _source
-  - cd _source && ls
+  - git clone -b source https://github.com/cboettig/cboettig.github.io ../_source
+  - cd ../source && Rscript -e 'servr::jekyll(serve=FALSE)' && rsync -a _site ../cboettig.github.io
+  - git status 
 
 #deploy:
 #  bash:
