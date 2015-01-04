@@ -10,6 +10,7 @@ script:
 
 deploy:
   bash:
-    command: ./deploy.sh
+    script:
+      - ./../cboettig.github.io/deploy.sh
      
 
