@@ -1,10 +1,6 @@
-image: cboettig/labnotebook:latest
+image: rocker/hadleyverse
+	path: github.com/cboettig/cboettig.github.io
+	branch: source
+
 script:
-	- git checkout -b source origin/source
-	- Rscript -e "servr::jekyll(serve=FALSE)"
-
-deploy:
-	bash:
-		script:
-			- ./deploy.sh  
-
+	- R --version 
