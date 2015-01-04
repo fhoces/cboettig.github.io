@@ -1,9 +1,12 @@
 image: cboettig/labnotebook
 
-git:
-  path: github.com/cboettig/cboettig.github.io
-  branch: source
-
 script:
+  - git checkout -b gh-pages origin/gh-pages
+  - Rscript -e 'servr::jeykll()'
   - ls
+
+#deploy:
+#  bash:
+#    script: 
+#      - ./deploy.sh
 
