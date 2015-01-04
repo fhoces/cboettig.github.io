@@ -1,4 +1,4 @@
-image: cboettig/labnotebook
+image: cboettig/labnotebook:latest
 script:
 	- git checkout -b source origin/source
 	- Rscript -e "servr::jekyll(serve=FALSE)"
