@@ -3,7 +3,8 @@ image: cboettig/labnotebook
 script:
   - ls
   - pwd
-  - git branch
+  - git clone -b source https://github.com/cboettig/cboettig.github.io _source
+  - cd _source && ls
 
 #deploy:
 #  bash:
