@@ -109,7 +109,7 @@
     <h4>  <a property="account" href="https://github.com/cboettig" onclick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><i class="icon-github" alt="github"></i> Coding </a></h4> 
     <div class="excerpt">
       <div class="scroll">
-        <ul><li>cboettig commented on issue dgrtwo/broom#40: <em>Yeah, good point about optim never actually set as an S3 class. I like your tidy_list approach though, that seems like the perfect way to handle su…</em> <a href="https://github.com/dgrtwo/broom/issues/40#issuecomment-90764281">11:57 2015/04/07</a></li><li>cboettig pushed to master at cboettig/2015: <em>draft of gpdd and kalman filter exploration</em> <a href="https://github.com/cboettig/2015/compare/075f56ec1d...b0caeff0a8">11:02 2015/04/07</a></li><li>cboettig opened issue dgrtwo/broom#40: <em>support `optim()` output?</em> <a href="https://github.com/dgrtwo/broom/issues/40">10:15 2015/04/07</a></li><li>cboettig starred dgrtwo/broom: <em></em> <a href="https://github.com/dgrtwo/broom">10:04 2015/04/07</a></li><li>cboettig pushed to gh-pages at cboettig/2015: <em>Site updated from drone</em> <a href="https://github.com/cboettig/2015/compare/d2e82b421e...1323659c88">06:11 2015/04/07</a></li></ul>
+        <ul><li>cboettig pushed to master at cboettig/2015: <em>sketch notes for reporter comments</em> <a href="https://github.com/cboettig/2015/compare/31daeda3c1...9856f3a807">03:57 2015/04/09</a></li><li>cboettig pushed to master at cboettig/2015: <em>extending gpdd/kalman filter notes</em> <a href="https://github.com/cboettig/2015/compare/b0caeff0a8...31daeda3c1">03:56 2015/04/09</a></li><li>cboettig opened issue ropensci/onboarding#9: <em>packages repo</em> <a href="https://github.com/ropensci/onboarding/issues/9">11:26 2015/04/08</a></li><li>cboettig pushed to gh-pages at cboettig/packages: <em>add CNAME</em> <a href="https://github.com/cboettig/packages/compare/b9ea1558b5...c6f3375607">11:17 2015/04/08</a></li><li>cboettig pushed to gh-pages at cboettig/packages: <em>specify type=source</em> <a href="https://github.com/cboettig/packages/compare/0d80345d1c...b9ea1558b5">10:51 2015/04/08</a></li></ul>
       </div>
     </div>
   </div>
@@ -117,12 +117,12 @@
     <h4> <a property="account" href="https://twitter.com/cboettig" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><i class="icon-twitter"></i> Discussing </a></h4> 
      <div class="excerpt">
       <div class="scroll">
-       <ul><li><p>nice! broom package: Convert statistical analysis objects into tidy data frames. <a href="http://t.co/n6j9pTqL9K">http://t.co/n6j9pTqL9K</a>  ht @hadleywickham #rstats</p>
- <a href="http://twitter.com/cboettig/statuses/585563801090711552">10:04 2015/04/07</a> </li><li><p>@hadleywickham do() is definitely the ticket! had overlooked it before! broom looks great; doesn&#39;t cover my real use case but could (optim)</p>
- <a href="http://twitter.com/cboettig/statuses/585563351268331520">10:02 2015/04/07</a> </li><li><h1>rstats #lazyweb Can dplyr::summarise() handle functions that return vectors? <a href="http://t.co/tJKWrYPaBT">http://t.co/tJKWrYPaBT</a> looking for a better strategy here...</h1>
- <a href="http://twitter.com/cboettig/statuses/585536025885351937">08:14 2015/04/07</a> </li><li><p>RT @emhrt_: Using Docker to check your #rstats package builds before CRAN submission: a short guide <a href="http://t.co/qBVHKemmAN">http://t.co/qBVHKemmAN</a> cc @cboettig  @e…</p>
- <a href="http://twitter.com/cboettig/statuses/585514365555765249">06:47 2015/04/07</a> </li><li><p>RT @ORCID_Org: ORCID is awarded an 18-month, $3M grant by The Helmsley Charitable Trust to build int&#39;l engagement capacity <a href="http://t.co/e3nm%E2%80%A6">http://t.co/e3nm…</a></p>
- <a href="http://twitter.com/cboettig/statuses/585483294076235779">04:44 2015/04/07</a> </li></ul>
+       <ul><li><p>@JennyBryan I just try and avoid plyr + dplyr in the same script, seems to be asking for trouble. +1 for generic formulas behavior though</p>
+ <a href="http://twitter.com/cboettig/statuses/585876594729684993">06:47 2015/04/08</a> </li><li><p>@JennyBryan I s&#39;pose one could define a (less-flexible) do()-like fn that works without <code>.</code>; e.g. function(.data, f) do(f(.data))</p>
+ <a href="http://twitter.com/cboettig/statuses/585876177706848256">06:45 2015/04/08</a> </li><li><p>@JennyBryan ah of course, somehow I was thinking you&#39;d need ddply(., ~group, f). still ignores group_by() though.</p>
+ <a href="http://twitter.com/cboettig/statuses/585875505582186497">06:43 2015/04/08</a> </li><li><p>@JennyBryan I agree (<code>.$x</code> is even worse); but then ddply would still need a <code>.</code> to work in a pipe, and I guess doesn&#39;t respect group_by()</p>
+ <a href="http://twitter.com/cboettig/statuses/585873707073052672">06:35 2015/04/08</a> </li><li><p>@drob @hadleywickham  using this right now, great stuff.  Thanks!</p>
+ <a href="http://twitter.com/cboettig/statuses/585869224783978497">06:18 2015/04/08</a> </li></ul>
       </div>
     </div> 
   </div> 
