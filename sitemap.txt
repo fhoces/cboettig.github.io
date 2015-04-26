@@ -109,11 +109,8 @@
     <article>
      
 http://www.carlboettiger.info//404.html  
-http://www.carlboettiger.info//R.html  
 http://www.carlboettiger.info//README.html  
 http://www.carlboettiger.info//archive.html  
-http://www.carlboettiger.info//atom.html  
-http://www.carlboettiger.info//blog.html  
 http://www.carlboettiger.info//calendar.html  
 http://www.carlboettiger.info//categories.html  
 http://www.carlboettiger.info//community.html  
