@@ -71,13 +71,11 @@
           <li  >
           <a href="/index.html">Home</a></li>
           <li  >
-          <a href="/vita.html">Vita</a></li>
+          <a href="/members.html">Members</a></li>
           <li  >
-          <a href="/research.html">Research</a></li>
+          <a href="/publications.html">Publications</a></li>
           <li  >
           <a href="/teaching.html">Teaching</a></li>
-          <li  >
-          <a href="/community.html">Community</a></li>
           <li  >
           <a href="/lab-notebook.html">Lab Notebook</a></li>
 
@@ -107,45 +105,36 @@
       <div class="row">
   <div class="col-md-8 col-md-offset-1">
     <article>
-    <p><a href="https://travis-ci.org/cboettig/labnotebook"><img src="https://travis-ci.org/cboettig/labnotebook.svg?branch=master" alt="Build Status" /></a></p>
-<p>Welcome to my online open lab notebook; home to all my research scribbles. This README documents the technical information about this site. If you’re looking for more about what this open lab notebook is about and why I keep it, consider starting with this <a href="http://www.carlboettiger.info/2012/09/28/Welcome-to-my-lab-notebook.html">introduction</a>, or <a href="http://www.carlboettiger.info">more about me</a>. <em>Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the University of California.</em></p>
-<ul>
-<li>Site source at <a href="http://github.com/cboettig/labnotebook">cboettig/labnotebook</a>.</li>
-<li>Please report <a href="https://github.com/cboettig/labnotebook/issues">errors or give feedback</a>.</li>
-</ul>
+    <!--
+[![Build Status](http://server.carlboettiger.info:88/api/badge/github.com/cboettig/cboettig.github.io/status.svg?branch=master)](http://server.carlboettiger.info:88/github.com/cboettig/cboettig.github.io)
+-->
+<h1 id="overview">Overview</h1>
+<p><a href="http://carlboettiger.info">This site</a> is built with Jekyll and hosted on GitHub Pages. Site source at <a href="http://github.com/cboettig/cboettig.github.io">cboettig/cboettig.github.io</a>. Please report <a href="https://github.com/cboettig/cboettig.github.io/issues">errors or feedback here</a>. The <code>cboettig.github.io</code> repository hosts the main pages, while my lab notebooks are now hosted from separate GitHub repositories by year as <a href="http://www.carlboettiger.info/2015/01/01/notebook-maintenance-and-scaling.html">described in this post</a>. For more about the open lab notebook, please see <a href="http://www.carlboettiger.info/2012/09/28/Welcome-to-my-lab-notebook.html">this introduction</a></p>
 <h1 id="site-features-credits">Site Features &amp; Credits</h1>
 <ul>
+<li>Static site generation with <a href="https://github.com/jekyll/jekyll">Jekyll</a></li>
+<li>Site and source code hosting on <a href="https://github.com/">Github</a></li>
 <li>Colors and syntax highlighting with <a href="http://ethanschoonover.com/solarized">Solarized</a></li>
 <li>Crisp equations rendered in <a href="http://www.mathjax.org/">Mathjax</a></li>
-<li>Reproducible code execution with <a href="http://yihui.name/knitr/">knitr</a></li>
+<li>Reproducible code execution with <a href="http://yihui.name/knitr/">knitr</a> and <a href="http://github.com/yihui/servr">servr</a></li>
 <li>CSS based on <a href="http://getboostrap.com">twitter bootstrap</a></li>
-<li>Scalable CSS icons from <a href="http://fortawesome.github.com/Font-Awesome">FontAwesome</a></li>
-<li>Static site generation with <a href="https://github.com/mojombo/jekyll">Jekyll</a></li>
-<li>Markdown parsing with <a href="http://johnmacfarlane.net/pandoc/">pandoc</a></li>
-<li>Site and source code hosting on <a href="https://github.com/">Github</a></li>
+<li>Scalable CSS icons from <a href="http://fortawesome.github.com/Font-Awesome">FontAwesome</a> and <a href="https://github.com/jpswalsh/academicons">Academicons</a></li>
 <li>Uptime monitoring from my.pingdom.com; see <a href="http://stats.pingdom.com/fy1sae94ydyi/616612">status report</a></li>
+<li>Markdown parsing with <a href="http://johnmacfarlane.net/pandoc/">pandoc</a></li>
+<li>Portable build environment using <a href="https://docker.com">Docker</a></li>
+<li>Automatic builds using <a href="https://github.com/drone/drone">Drone-CI</a></li>
 </ul>
 <h1 id="notebook-archiving-data-management">Notebook Archiving &amp; Data Management</h1>
-<p>The lab notebook is written and maintained in plain text (UTF-8) using markdown. All files are kept in a version managed repository system using <a href="http://git-scm.com/">git</a>, which provides unique SHA hashes to protect against corruption. Synchronized backups of the git repository are maintained on both local and remote servers (RAID 6) to protect against hardware failures, as well as on the public international software repository, GitHub <a href="https://github.com/cboettig">github.com/cboettig</a>. Version history preserves a time-line of changes and protects against user error file loss. Archival copies of notebook entries shall be published annually to <a href="http://figshare.com">figshare</a> where they will be assigned DOIs and preserved by the <a href="http://www.clockss.org/clockss/Home">CLOCKSS</a> geopolitically distributed 12 node global archive.</p>
+<p>The lab notebook is written and maintained in plain text (UTF-8) using markdown. All files are kept in a version managed repository system using <a href="http://git-scm.com/">git</a>, which provides unique SHA hashes to protect against corruption. Synchronized backups of the git repository are maintained on both local and remote servers to protect against hardware failures, as well as on the public international software repository, GitHub <a href="https://github.com/cboettig">github.com/cboettig</a>. Version history preserves a time-line of changes and protects against user error file loss. Archival copies of notebook entries shall be published annually to <a href="http://figshare.com">figshare</a></p>
 <hr />
 <h1 id="building-from-source">Building from source</h1>
-<p><em>NOTE:</em> This site is developed for my own needs and may be difficult to adapt directly to another purpose. If you are new to Jekyll, consider starting with a basic Jekyll template such as <a href="http://jekyllbootstrap.com/">jekyll-bootstrap</a> which will be considerably easier to adapt than working from this repository directly.</p>
-<p>The site’s <a href="https://github.com/cboettig/labnotebook/tree/master/.travis.yml">.travis.yml</a> file contains the recipe to build this site from scratch on Travis-CI, which is how the site is currently deployed. As such, the script will always provide the current steps necessary to get the site to build (Travis-CI is based on a Ubuntu 12.04 image; these directions can be adapted as needed).</p>
-<p>This site repository also now includes a <a href="https://github.com/cboettig/labnotebook/tree/master/Dockerfile">Dockerfile</a> for generating a portable docker container to generate the site.</p>
-<p>A separate <a href="https://github.com/cboettig/labnotebook/tree/master/assets/_bootstrap-3.1.1/Dockerfile">Dockerfile for building boostrap 3.1.1 CSS</a> can be found in the <code>assets/_bootstrap-3.1.1</code> directory.</p>
-<h2 id="site-configuration">Site configuration</h2>
-<p>Fill in all elements of <code>_config.yml</code> appropriately.</p>
-<h2 id="api-key-configuration">API key configuration</h2>
-<p>Several of my custom plugins require authentication credentials to the relevant API, which are not included when forking this public repository, for obvious reasons. These credentials should be stored as secure YAML files in the project source directory, and added to both <code>.gitignore</code> and the <code>exclude</code> list of <code>_config.yml</code>. Currently credentials are only used for the Twitter and Google Analytics plugins. See the headers of these plugins for more documentation.</p>
-<h3 id="custom-plugins">Custom Plugins</h3>
-<p>I have written a series of <a href="https://github.com/cboettig/labnotebook/tree/master/_plugins/jekyll-labnotebook-plugins">custom Jekyll plugins</a> using these gems. See the header comments of each plugin for more details on their configuration and use. Most are written explicitly for my notebook and may require tweaking for general use. Plugins are frequently under development.</p>
+<p>This site is built automatically using Docker and Drone CI, as <a href="http://www.carlboettiger.info/2015/01/07/automated-knitr-in-jekyll.html">described in this post</a>. This site repository also now includes a <a href="https://github.com/cboettig/labnotebook/tree/master/Dockerfile">Dockerfile</a> for generating a portable docker container to generate the site. A separate <a href="https://github.com/cboettig/labnotebook/tree/master/assets/_bootstrap-3.1.1/Dockerfile">Dockerfile for building boostrap 3.1.1 CSS</a> can be found in the <code>assets/_bootstrap-3.1.1</code> directory.</p>
+<p><em>NOTE:</em> This site is developed for my own needs and may be difficult to adapt directly to another purpose. If you are new to Jekyll, consider starting with a Jekyll theme such as <a href="http://getpoole.com/">Poole</a>.</p>
 <hr />
-<h2 id="copyrights-license">Copyrights &amp; License</h2>
-<p>All original content is placed in the public domain by Carl Boettiger to the extent possible under law by the Creative Commons Zero declaration, <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>. Plugins are also provided under the <a href="http://opensource.org/licenses/MIT">MIT</a> license. Please remember that attribution and citation are appreciated where appropriate as proper scholarly practice. (Newton, Darwin, and Shakespeare are similarly in the public domain, but you wouldn’t plagiarize from them). Please cite or attribute this work as: <br/></p>
-<div vocab="http://purl.org/dc/terms/" typeof="bibliographicCitation">
-<span property="creator">Carl Boettiger</span> (<span property="date">“Page publication date”</span>), <span property="title">“Page Title”</span>, <span property="source">Lab Notebook</span>, <a property="http://creativecommons.org/ns#attributionURL" href="http://carlboettiger.info">http://carlboettiger.info</a>
-</div>
-<p><br/> with appropriate page title and publication date as indicated. <a href="http://greycite.knowledgeblog.org/">Greycite</a> is an excellent online tool that can generate the citation information for any particular page given it’s URL.</p>
+<h1 id="copyrights-license">Copyrights &amp; License</h1>
+<p>All original content unless otherwise specified is placed in the public domain by Carl Boettiger to the extent possible under law by the Creative Commons Zero declaration, <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>. Please remember to cite or attribute this content where appropriate.</p>
+<hr />
+<p><em>Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the University of California.</em></p>
 
     </article>
   </div>
