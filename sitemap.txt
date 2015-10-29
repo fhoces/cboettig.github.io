@@ -106,24 +106,24 @@
   <div class="col-md-8 col-md-offset-1">
     <article>
      
-http://www.carlboettiger.info//404.html  
-http://www.carlboettiger.info//README.html  
-http://www.carlboettiger.info//archive.html  
-http://www.carlboettiger.info//calendar.html  
-http://www.carlboettiger.info//categories.html  
-http://www.carlboettiger.info//community.html  
-http://www.carlboettiger.info//index.html  
-http://www.carlboettiger.info//join-us.html  
-http://www.carlboettiger.info//lab-notebook.html  
-http://www.carlboettiger.info//members.html  
-http://www.carlboettiger.info//networks.html  
-http://www.carlboettiger.info//publications.html  
-http://www.carlboettiger.info//research.html  
+http://www.carlboettiger.info//404  
+http://www.carlboettiger.info//README  
+http://www.carlboettiger.info//archive  
+http://www.carlboettiger.info//calendar  
+http://www.carlboettiger.info//categories  
+http://www.carlboettiger.info//community  
+http://www.carlboettiger.info//  
+http://www.carlboettiger.info//join-us  
+http://www.carlboettiger.info//lab-notebook  
+http://www.carlboettiger.info//members  
+http://www.carlboettiger.info//networks  
+http://www.carlboettiger.info//publications  
+http://www.carlboettiger.info//research  
 http://www.carlboettiger.info//sitemap.txt  
-http://www.carlboettiger.info//tags.html  
-http://www.carlboettiger.info//teaching.html  
-http://www.carlboettiger.info//assets/files/vita.html  
-http://www.carlboettiger.info//vita.html 
+http://www.carlboettiger.info//tags  
+http://www.carlboettiger.info//teaching  
+http://www.carlboettiger.info//assets/files/vita  
+http://www.carlboettiger.info//vita 
 
     </article>
   </div>
