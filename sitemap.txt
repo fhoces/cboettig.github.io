@@ -109,6 +109,7 @@
 http://www.carlboettiger.info//404  
 http://www.carlboettiger.info//README  
 http://www.carlboettiger.info//archive  
+http://www.carlboettiger.info//assets/css/bootstrap.css  
 http://www.carlboettiger.info//calendar  
 http://www.carlboettiger.info//categories  
 http://www.carlboettiger.info//community  
