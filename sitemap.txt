@@ -118,7 +118,6 @@ http://www.carlboettiger.info//join-us
 http://www.carlboettiger.info//lab-notebook  
 http://www.carlboettiger.info//members  
 http://www.carlboettiger.info//networks  
-http://www.carlboettiger.info//publications  
 http://www.carlboettiger.info//research  
 http://www.carlboettiger.info//sitemap.txt  
 http://www.carlboettiger.info//tags  
