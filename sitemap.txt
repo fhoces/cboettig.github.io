@@ -114,7 +114,6 @@ http://www.carlboettiger.info//calendar
 http://www.carlboettiger.info//categories  
 http://www.carlboettiger.info//community  
 http://www.carlboettiger.info//  
-http://www.carlboettiger.info//join-us  
 http://www.carlboettiger.info//lab-notebook  
 http://www.carlboettiger.info//members  
 http://www.carlboettiger.info//networks  
