@@ -101,7 +101,6 @@ http://www.carlboettiger.info//research
 http://www.carlboettiger.info//sitemap.txt  
 http://www.carlboettiger.info//tags  
 http://www.carlboettiger.info//teaching  
-http://www.carlboettiger.info//assets/files/vita  
 http://www.carlboettiger.info//vita 
 
     </article>
